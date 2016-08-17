@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -34,6 +34,7 @@ test:
 about:
   home: http://github.com/slackhq/python-slackclient
   license: MIT
+  license_file: LICENSE
   summary: 'Python client for Slack.com'
 
 extra:
