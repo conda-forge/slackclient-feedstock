@@ -1,7 +1,7 @@
 {%set name = "slackclient" %}
-{%set version = "1.0.1" %}
+{%set version = "1.0.5" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "4555589335b99b8b8c8faf217aceb7be13d789414ebad757a2eebcd8e9ad273e" %}
+{%set hash_val = "32895b7ec271b60d02e6cdd03afa3797bcde649ce520a70965db414390607995" %}
 
 package:
   name: {{ name }}
