@@ -1,19 +1,21 @@
-{%set name = "slackclient" %}
-{%set version = "1.0.6" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "e8ef8cd38d4fa86af0a662a24116332f610d14257cda5ff13a6a5b199e836dda" %}
+{% set name = "slackclient" %}
+{% set version = "1.0.6" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "e8ef8cd38d4fa86af0a662a24116332f610d14257cda5ff13a6a5b199e836dda" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -23,19 +25,22 @@ requirements:
 
   run:
     - python
-    - websocket-client
-    - requests
-    - six
+    - websocket-client >=0.35,<1.0a0
+    - requests >=2.11,<3.0a0
+    - six >=1.10,<2.0a0
 
 test:
   imports:
     - slackclient
 
 about:
-  home: http://github.com/slackhq/python-slackclient
-  license: MIT
+  home: https://github.com/slackhq/python-slackclient
   license_file: LICENSE
+  license: MIT
+  license_family: MIT
   summary: 'Python client for Slack.com'
+  dev_url: https://github.com/slackhq/python-slackclient
+  doc_url: https://slackapi.github.io/python-slackclient/
 
 extra:
   recipe-maintainers:
