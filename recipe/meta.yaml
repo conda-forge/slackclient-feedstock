@@ -1,7 +1,7 @@
 {%set name = "slackclient" %}
-{%set version = "1.0.5" %}
+{%set version = "1.0.6" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "32895b7ec271b60d02e6cdd03afa3797bcde649ce520a70965db414390607995" %}
+{%set hash_val = "e8ef8cd38d4fa86af0a662a24116332f610d14257cda5ff13a6a5b199e836dda" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
