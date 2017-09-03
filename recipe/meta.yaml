@@ -1,8 +1,8 @@
 {% set name = "slackclient" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.9" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "6d4c35076abdaa0bd676360868cb3b95139eeead41dc0648116d0a0d167bc4d5" %}
+{% set hash = "11264e29932ab7de4bfe3a37fdb974219bea07b5e945da92166bb53c4f4d92a8" %}
 {% set build = 0 %}
 
 package:
@@ -12,7 +12,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  {{ hash_type }}: {{ hash }}
 
 build:
   number: {{ build }}

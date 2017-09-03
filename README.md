@@ -1,7 +1,7 @@
 About slackclient
 =================
 
-Home: http://github.com/slackhq/python-slackclient
+Home: https://github.com/slackhq/python-slackclient
 
 Package license: MIT
 
