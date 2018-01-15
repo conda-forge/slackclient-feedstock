@@ -1,8 +1,8 @@
 {% set name = "slackclient" %}
-{% set version = "1.0.9" %}
+{% set version = "1.1.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "11264e29932ab7de4bfe3a37fdb974219bea07b5e945da92166bb53c4f4d92a8" %}
+{% set hash = "5d789e5f5f8c4d57052e946701fcf9d6d45e0db6dfd2b163707517cccede52fb" %}
 {% set build = 0 %}
 
 package:
