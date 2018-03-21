@@ -1,8 +1,8 @@
 {% set name = "slackclient" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "5d789e5f5f8c4d57052e946701fcf9d6d45e0db6dfd2b163707517cccede52fb" %}
+{% set hash = "557dbf7715fc8db0937813367ec3cc72cd14caf70bbdf12ff394ff3ae3ce8317" %}
 {% set build = 0 %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   noarch: python
 
