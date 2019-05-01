@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About slackclient
 =================
 
@@ -18,8 +14,17 @@ Summary: Python client for Slack.com
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/slackclient-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/slackclient-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5035&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slackclient-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
