@@ -33,8 +33,8 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: 'Python client for Slack.com'
-  doc_url: https://github.com/slackhq/python-slackclient
-  dev_url: https://slackapi.github.io/python-slackclient/
+  doc_url: https://slackapi.github.io/python-slackclient/
+  dev_url: https://github.com/slackhq/python-slackclient
 
 extra:
   recipe-maintainers:
