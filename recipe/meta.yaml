@@ -10,7 +10,7 @@ source:
   sha256: 3f9da5b111b8c4944380674d193c3ffd5bd4a36cda8b58fb2404f900afb0b1fa
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<=35]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -18,6 +18,7 @@ requirements:
   host:
     - python
     - pip
+    - pytest-runner
   run:
     - python
     - aiohttp >3.5.2
