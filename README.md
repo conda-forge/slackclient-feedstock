@@ -5,7 +5,7 @@ Home: https://github.com/slackhq/python-slackclient
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python client for Slack.com
 
