@@ -1,5 +1,5 @@
 {% set name = "slackclient" %}
-{% set version = "2.7.3" %}
+{% set version = "2.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cb29c0b3cddad67f8369df82aadb5e031e7457ec3c45c0c86cec10c31209f4b6
+  sha256: 373bebed7ed5c32bca84de1a206ebe2984b830aab8d04bd1836f082de6bf9105
 
 build:
   number: 0
